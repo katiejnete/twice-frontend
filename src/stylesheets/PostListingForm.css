@@ -1,0 +1,45 @@
+.post-listing-box {
+    background-color: #3faec4;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%; 
+    max-width: 600px;
+    overflow: auto;
+    margin: 0 auto; 
+}
+
+.post-listing-box input {
+    padding: 10px;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+#post-listing-form {
+    display: grid;
+    place-items: center;
+}
+
+#post-listing-form * {
+    margin: 5px;
+}
+
+#listing-form, #listing-img-form {
+    display: grid;
+    place-items: center;
+    overflow: auto; 
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    width: 100%; 
+}
+
+#listing-form *, #listing-img-form * {
+    margin: 5px;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+#listing-img-form input {
+    height: 100%;
+}

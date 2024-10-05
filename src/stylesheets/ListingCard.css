@@ -1,0 +1,32 @@
+.listing-card {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    max-height: 300px;
+}
+
+.listing-card p {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#3faec4;
+    text-align: left;
+}
+
+.listing-card .listing-card-title p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+
+.listing-card .listing-card-text p {
+    font-size: 14px;
+}
+
+.listing-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}

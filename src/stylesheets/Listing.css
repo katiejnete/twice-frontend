@@ -1,0 +1,34 @@
+.listing-images img {
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.listing-avatar-box {
+    position: relative;
+    border: 1px solid #3faec4;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 38.5vw;
+}
+
+.listing-avatar-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#listing-footer-heart {
+    margin-left: 10px;
+    height: 15px;
+}
+
+.listing button {
+    display: inline-block;
+    margin: 0 auto;
+}

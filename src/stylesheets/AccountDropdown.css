@@ -1,0 +1,15 @@
+.account-dropdown .dropdown-toggle {
+    border: 1px solid #3faec4;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.account-dropdown img {
+    width: 150%;
+    height: 150%;
+    object-fit: contain;
+}

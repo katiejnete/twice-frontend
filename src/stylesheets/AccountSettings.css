@@ -1,0 +1,52 @@
+.account-settings-box {
+    background-color: #3faec4;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%; 
+    max-width: 600px;
+    overflow: auto;
+    margin: 0 auto; 
+}
+
+.account-settings-box input {
+    padding: 10px;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.account-settings-box {
+    display: grid;
+    place-items: center;
+}
+
+.account-settings-box * {
+    margin: 5px;
+}
+
+#update-avatar-form, #update-contact-form, #update-location-form, #update-password-form {
+    display: grid;
+    place-items: center;
+    overflow: auto; 
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    width: 100%; 
+}
+
+#update-avatar-form *, #update-contact-form *, #update-location-form *, #update-password-form * {
+    margin: 5px;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+#update-avatar-form input {
+    height: 100%;
+}
+
+#update-avatar-form button, #update-contact-form button, #update-location-form button, #update-password-form button {
+    width: 25%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}

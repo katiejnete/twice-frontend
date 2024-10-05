@@ -1,0 +1,13 @@
+.category-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.category-list a {
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+}

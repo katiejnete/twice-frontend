@@ -1,0 +1,13 @@
+.hero h1 {
+    font-size: 22px;
+}
+
+.hero p, .hero h2, .hero-btn {
+    font-size: 18px;
+}
+
+.hero-btn {
+    height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,85 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: -10px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    margin-top: 10px;
+}
+
+button {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: none;
+    position: relative;
+    top: 0px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(245, 245, 245);
+}
+
+img {
+    height: 30px;
+}
+
+.navbar-search-form {
+    position: relative;
+    top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-button--geo {
+    background-color: #3faec4;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+    padding: 0px;
+    margin-left: 5px;
+}
+
+.navbar-button--geo img {
+    height: 15px;
+}
+
+.navbar-button--geo:hover {
+    background-color: rgb(65, 124, 135);
+}
+
+.navbar-favorites {
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    padding: 0px;
+
+    border-radius: 15px;
+    background-color: #3faec4;
+}
+
+.navbar-favorites img {
+    height: 15px;
+}
+
+.navbar-search-form .navbar-search-btn {
+    display: inline-block;
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+   .navbar {
+    flex-wrap: wrap;
+   } 
+}

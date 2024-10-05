@@ -1,0 +1,19 @@
+.user-profile-avatar-box {
+    position: relative;
+    left: 50px;
+    border: 1px solid #3faec4;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 38.5vw;
+}
+
+.user-profile-avatar-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

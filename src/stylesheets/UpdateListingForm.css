@@ -1,0 +1,83 @@
+.update-listing-box {
+    background-color: #3faec4;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.update-listing-box input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.update-listing-box * {
+    margin: 5px;
+}
+
+#update-listing-form, #listing-img-form {
+    display: grid;
+    place-items: center;
+    overflow: auto; 
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    width: 100%; 
+}
+
+#update-listing-form *, #listing-img-form * {
+    margin: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#update-listing-form button {
+    width: 25%;
+    height: 50px;
+}
+
+/* New Styles for Image Display */
+.image-preview-section {
+    width: 100%;
+}
+
+.existing-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-item {
+    position: relative;
+    max-width: 150px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.image-item button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.image-item button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

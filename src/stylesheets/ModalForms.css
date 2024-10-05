@@ -1,0 +1,14 @@
+.modal form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal form input {
+    width: 90%;
+    padding: 8px;
+}
+
+.modal form * {
+    margin-left: 10px;
+    margin-top: 10px; 
+}
