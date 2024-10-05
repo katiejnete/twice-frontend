@@ -6,8 +6,11 @@ import FavoritesContext from "../../context/FavoritesContext";
 
 const ListingFooter = ({ currentUser, user, listing }) => {
   const [isContactOpen, setIsContactOpen] = useState(false);
-  const { addFavorite, removeFavorite, favoriteIds = [] } =
-    useContext(FavoritesContext);
+  const {
+    addFavorite,
+    removeFavorite,
+    favoriteIds = [],
+  } = useContext(FavoritesContext);
   const toggleContact = () => setIsContactOpen(!isContactOpen);
 
   const heartType = favoriteIds.includes(listing.id) ? heartFilled : heart;
@@ -31,9 +34,11 @@ const ListingFooter = ({ currentUser, user, listing }) => {
           <ModalBody>{user.contactInfo}</ModalBody>
         </Modal>
       )}
-      {currentUser && <button onClick={handleSave}>
-        Save <img id="listing-footer-heart" src={heartType} />
-      </button>}
+      {currentUser && (
+        <button onClick={handleSave}>
+          Save <img id="listing-footer-heart" src={heartType} />
+        </button>
+      )}
     </>
   );
 };

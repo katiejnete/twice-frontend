@@ -16,7 +16,7 @@ const ListingList = ({ listings, setListingsLoading, user }) => {
     if (key === "q") key = "search"; // normalize "q" to "search" for alert
     if (value === "") value = "None"; // default value for empty query param
     alertMessage += `${key}: ${value} `;
-    if (user && user.locationId) alertMessage += "at user's location"; // let user know searches are at their account setting's location
+    if (user && user.locationId) alertMessage += "at user's location "; // let user know searches are at their account setting's location
   }
 
   // append username to alert if user is logged in and viewing their profile
