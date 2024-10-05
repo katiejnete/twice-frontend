@@ -4,7 +4,7 @@ import heart from "../../assets/heart.svg";
 import heartFilled from "../../assets/heart-fill.svg";
 import FavoritesContext from "../../context/FavoritesContext";
 
-const ListingFooter = ({ user, listing }) => {
+const ListingFooter = ({ currentUser, user, listing }) => {
   const [isContactOpen, setIsContactOpen] = useState(false);
   const { addFavorite, removeFavorite, favoriteIds = [] } =
     useContext(FavoritesContext);
@@ -31,7 +31,7 @@ const ListingFooter = ({ user, listing }) => {
           <ModalBody>{user.contactInfo}</ModalBody>
         </Modal>
       )}
-      {user && <button onClick={handleSave}>
+      {currentUser && <button onClick={handleSave}>
         Save <img id="listing-footer-heart" src={heartType} />
       </button>}
     </>

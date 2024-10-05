@@ -80,7 +80,7 @@ const Listing = ({ onDelete }) => {
           <button onClick={handleDelete}>Delete Listing</button>
         </div>
       ) : (
-        <ListingFooter user={userProfile} listing={listing} />
+        <ListingFooter currentUser={user} user={userProfile} listing={listing} />
       )}
     </section>
   );
