@@ -72,16 +72,15 @@ const Listing = ({ onDelete }) => {
           <p>Items Given Away - {userProfile.itemsGivenAway}</p>
         </Link>
       </section>
-      {user && listing.userId === user.id ? (
+      {user && listing.userId === user.id && (
         <div>
           <Link to={`/listings/${listing.id}/edit`}>
             <button>Edit Listing</button>
           </Link>
           <button onClick={handleDelete}>Delete Listing</button>
         </div>
-      ) : (
-        <ListingFooter user={userProfile} listing={listing} />
       )}
+      {user && <ListingFooter user={userProfile} listing={listing} />}
     </section>
   );
 };
