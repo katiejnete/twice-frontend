@@ -31,9 +31,9 @@ const ListingFooter = ({ user, listing }) => {
           <ModalBody>{user.contactInfo}</ModalBody>
         </Modal>
       )}
-      <button onClick={handleSave}>
+      {user && <button onClick={handleSave}>
         Save <img id="listing-footer-heart" src={heartType} />
-      </button>
+      </button>}
     </>
   );
 };
