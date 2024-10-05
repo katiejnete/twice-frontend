@@ -37,7 +37,7 @@ const useListings = (storedSearchData, user) => {
         const itemList = await TwiceLovedApi.getListings(dataQueryObject);
         setItems(itemList);
       } catch (error) {
-        if (error[1].slice(-3) === "404") setItems([]); // set listings to empty arr if 404
+        if (error && error[1].slice(-3) === "404") setItems([]); // set listings to empty arr if 404
         console.error(`Failed to fetch listings`, error);
       } finally {
         setLoading(false);
